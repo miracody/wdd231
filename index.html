@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd231 mirabel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD231 Course Home Page for Mirabel Nwanneka">
+  <meta name="author" content="Mirabel Nwanneka">
+  <title>WDD231 | Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-   <h1>Welcome to WDD231 Mirabel's Page</h1> 
+  <header>
+    <div class="branding">
+      <img src="images/logo.svg" alt="Mirabel's photo" class="profile-logo">
+      <span class="site-name">Mirabel Nwanneka</span>
+    </div>
+    <button id="hamburger" aria-label="Toggle Navigation Menu">&#9776;</button>
+  </header>
+
+  <nav id="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li><a href="final/index.html">Final Project</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <h1>Home</h1>
+
+   <section class="intro-section">
+  <div class="student-box">
+    <div class="section-header">Student</div>
+    <div class="about-photo">
+      <img src="images/mirabel.jpg" alt="Mirabel's photo">
+    </div>
+  </div>
+
+  <div class="about-box">
+    <div class="section-header">About Me</div>
+    <div class="about-text">
+      <p>
+        I'm Mirabel Nwanneka I live in Angola, Am student of BYU-Idaho studying software development. I run a Company in Angola called ROMIRA GLOBAL a crochet supplies Company, and I'm passionate about empowering artisans and building accessible web experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="courses">
+      <div class="section-header">Web Certificate Courses</div>
+      <div class="course-buttons">
+        <button id="allBtn">All</button>
+        <button id="wddBtn">WDD</button>
+        <button id="cseBtn">CSE</button>
+      </div>
+      <div class="course-layout">
+        <div id="courseCards"></div>
+        <div id="courseDetail" class="hidden"></div>
+      </div>
+      <div id="creditTotal"></div>
+    </section>
+  </main>
+
+  <footer class="footer-nav">
+    <div class="social">
+      <a href="https://github.com/miracody" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/mirabel-nwanneka-855b6326b/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/ya.rmira" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; <span id="year"></span> Mirabel • Angola</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

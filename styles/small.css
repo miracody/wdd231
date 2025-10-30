@@ -1,0 +1,239 @@
+:root {
+  --text-color: #000;
+  --bg-color: #fff;
+  --header-footer: #004d40;
+  --completed-bg: #e8f5e9;
+  --completed-border: #2e7d32;
+  --pending-bg: #fff3e0;
+  --pending-border: #f57c00;
+  --box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+  --font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d40;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  background-color: #004d40;
+  padding: 1rem;
+  
+}
+
+nav.open ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+nav a:hover{
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.student-box,
+.about-box {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+  border-radius: 9px;
+  padding: 2rem 1rem 1rem;
+}
+
+.section-header {
+  background-color: #004d40;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+  text-align: center;
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-photo {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-photo img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
+.about-text {
+  padding-top: 1rem;
+}
+
+
+
+.course-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.course-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #004d40;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.course-buttons button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+.course-card {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+  border-radius: 9px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card.completed {
+  background-color: #e8f5e9;
+  border-left: 6px solid #2e7d32;
+}
+
+.course-card.pending {
+  background-color: #fff3e0;
+  border-left: 6px solid #f57c00;
+}
+
+#creditTotal {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #e1e1ea, -2px -2px 5px #e1e1ea;
+  border-radius: 9px;
+}
+
+footer {
+  background-color: var(--header-footer);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-family);
+  margin-top: 2rem;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .social a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer .social a:hover {
+  color: var(--completed-border);
+  transform: scale(1.1);
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
