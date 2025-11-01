@@ -33,6 +33,16 @@ body {
   color: white;
 }
 
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden by default */
+}
+
+
 .nav-menu ul {
   display: flex;
   gap: 1rem;
@@ -54,8 +64,8 @@ body {
   }
 
   .nav-menu ul {
-    flex-direction: column;
     display: none;
+    flex-direction: column;
     background-color: #004d26;
     padding: 1rem;
   }
@@ -64,6 +74,7 @@ body {
     display: flex;
   }
 }
+
 
 
 .logo {
