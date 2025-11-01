@@ -18,6 +18,15 @@ body {
   vertical-align: middle;
 }
 
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+
 nav ul {
   list-style: none;
   padding: 0;
