@@ -67,7 +67,7 @@ const creditTotal = document.getElementById("creditTotal");
 
 function renderCourses(courseList) {
   courseCards.innerHTML = "";
-  courseDetail.classList.add("hidden");
+  courseDetail.classList.remove("visible");
   let totalCredits = 0;
 
   courseList.forEach(course => {
@@ -92,8 +92,9 @@ function showCourseDetail(course) {
     <p><strong>Certificate:</strong> ${course.certificate}</p>
     <p>${course.description}</p>
     <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    <button onclick="courseDetail.classList.remove('visible')">Close</button>
   `;
-  courseDetail.classList.remove("hidden");
+  courseDetail.classList.add("visible");
 }
 
 // Filter buttons

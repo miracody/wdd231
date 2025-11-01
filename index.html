@@ -4,77 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore Mirabel Nwanneka’s WDD 231 homepage featuring responsive design, course projects, and accessible web development.">
-  <meta name="author" content="Mirabel Nwanneka">
-  <title>WDD231 | Home</title>
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-
-  
+  <meta name="author" content="Mirabel Nwanneka" >
+  <title>Mirabel Nwanneka| WDD 231 </title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-
- 
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="branding">
-      <img src="images/logo.svg" alt="Mirabel's photo" class="profile-logo">
-      <span class="site-name">Mirabel Nwanneka</span>
+    <div class="header-box">
+      <img src="images/logo.svg" alt="Mirabel's logo" class="logo">
+      <h1>Mirabel Nwanneka</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+      </nav>
     </div>
-    <button id="hamburger" aria-label="Toggle Navigation Menu">&#9776;</button>
   </header>
 
-  <nav id="mainNav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="chamber/index.html">Chamber</a></li>
-      <li><a href="final/index.html">Final Project</a></li>
-    </ul>
-  </nav>
-
-
   <main>
-    <h1>Home</h1>
+    <h2 class="page-heading">WDD 231 Home Page | MIRABEL</h2>
+    <hr >
 
+    <section class="intro-row">
+      <div class="content-box about-box">
+        <h3>About Me</h3>
+        <p>I'm Mirabel Nwanneka, founder of ROMIRA GLOBAL and a student of BYU–Idaho. I specialize in accessible web design and empowering Angolan artisans through digital tools, i live in Angola with my family am taking this course to acquire more knowledge in software to help me improve my business through technology and also help other improve their business also.<p>
+      </div>
 
-    <section class="student-box">
-      <h2>Student</h2>
-      <div class="about-photo">
-        <img src="images/mirabel.jpg" alt="Mirabel's photo">
+      <div class="content-box student-box">
+        <h3>Student Photo</h3>
+        <img src="images/mirabel.jpg" alt="Mirabel's photo" class="student photo">
       </div>
     </section>
 
-    <section class="about-box">
-      <h2>About Me</h2>
-      <div class="about-text">
-       <p>
-        I'm Mirabel Nwanneka I live in Angola, Am student of BYU-Idaho studying software development. I run a Company in Angola called ROMIRA GLOBAL a crochet supplies Company, and I'm passionate about empowering artisans and building accessible web experiences.
-       </p>
-      </div>
-    </section>
- 
+    <section class="content-box course-section">
+      <h3>Web and Computer Programming Certificate Courses</h3>
 
-
-
-    <section class="courses">
-      <h2>Web Certificate Courses</h2>
       <div class="course-buttons">
-        <button id="allBtn">All</button>
-        <button id="wddBtn">WDD</button>
+        <button id="allBtn">All Courses</button>
         <button id="cseBtn">CSE</button>
+        <button id="wddBtn">WDD</button>
       </div>
-      <div class="course-layout">
-        <div id="courseCards"></div>
-        <div id="courseDetail" class="hidden"></div>
-      </div>
-      <div id="creditTotal"></div>
+
+      <div id="courseCards" class="course-grid"></div>
+      <div id="courseDetail" class="side-popup"></div>
+      <div id="creditTotal">Total Credits: 0</div>
     </section>
   </main>
 
