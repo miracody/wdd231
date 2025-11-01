@@ -57,20 +57,19 @@ body {
   font-weight: 500;
 }
 
-
 @media (max-width: 768px) {
-  .menu-toggle {
+  #hamburger {
     display: block;
   }
 
-  .nav-menu ul {
+  #mainNav ul {
     display: none;
     flex-direction: column;
     background-color: #004d26;
     padding: 1rem;
   }
 
-  .nav-menu.open ul {
+  #mainNav.open ul {
     display: flex;
   }
 }
