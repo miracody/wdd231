@@ -1,9 +1,10 @@
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("mainNav");
+const hamburger = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
+
 
 const currentPage = location.pathname.split("/").pop();
 document.querySelectorAll("#mainNav a").forEach(link => {
