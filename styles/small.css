@@ -7,11 +7,64 @@ body {
 }
 
 .header-box {
-  background-color: #004d26;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* aligns everything to the left */
+  gap: 2rem;
   padding: 1rem;
-  text-align: center;
+  background-color: #004d26;
+  flex-wrap: wrap;
 }
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    display: none;
+    background-color: #004d26;
+    padding: 1rem;
+  }
+
+  .nav-menu.open ul {
+    display: flex;
+  }
+}
+
 
 .logo {
   width: 60px;
@@ -65,17 +118,44 @@ hr {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
 }
-
 .intro-row {
-  display: block;
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.student-box img {
-  width: 100%;
-  max-width: 300px;
+/* Shared box styling */
+.content-box {
+  background-color: #f4f4f4;
+  padding: 1rem;
   border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+/* About Me box on the left */
+.about-me {
+  flex: 1 1 60%;
+}
+
+/* Student Photo box on the right */
+.student-photo {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.student-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
 
 .course-buttons {
   display: flex;

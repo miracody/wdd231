@@ -110,5 +110,21 @@ document.getElementById("cseBtn").addEventListener("click", () => {
   renderCourses(courses.filter(c => c.subject === "CSE"));
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lastModified = document.lastModified;
+  document.getElementById("lastModified").textContent = `Last Modification: ${lastModified}`;
+});
+
+
+
 // Initial render
 renderCourses(courses);
