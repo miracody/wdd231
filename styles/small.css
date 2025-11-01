@@ -33,7 +33,7 @@ body {
   color: white;
 }
 
-.menu-toggle {
+#hamburger {
   background: none;
   border: none;
   font-size: 2rem;
@@ -42,8 +42,7 @@ body {
   display: none; 
 }
 
-
-.nav-menu ul {
+#mainNav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
@@ -51,7 +50,7 @@ body {
   margin: 0;
 }
 
-.nav-menu a {
+#mainNav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -73,6 +72,7 @@ body {
     display: flex;
   }
 }
+
 
 
 
