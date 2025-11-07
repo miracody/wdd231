@@ -185,12 +185,10 @@ h1 {
 .forecast-box li {
   margin: 0.3rem 0;
 }
-
 .business-card {
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 2px solid #ccc;
-  padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
