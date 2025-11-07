@@ -5,8 +5,7 @@ const listBtn = document.getElementById('list-view');
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
 
-// Toggle hamburger menu
-// ...existing code...
+
 if (menuToggle) {
   menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('open');
@@ -24,7 +23,6 @@ if (gridBtn && listBtn && directory) {
     directory.classList.remove('grid-view');
   });
 }
-// ...existing code...
 
 document.addEventListener("DOMContentLoaded", function () {
   const currentYearEl = document.getElementById("currentyear");
@@ -39,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Fetch and display member data
 async function getMembers() {
   try {
     const response = await fetch('data/members.json');
@@ -62,7 +59,6 @@ function displayMembers(members) {
     const badge = getMembershipBadge(level);
 
     card.innerHTML = `
-      <img src="${member.image}" alt="${member.name} logo">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>

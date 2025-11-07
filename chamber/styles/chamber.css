@@ -228,6 +228,40 @@ h1 {
   font-weight: 500;
 }
 
+/* Grid View Styles */
+#directory.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+#directory.grid-view .business-card {
+  text-align: center;
+}
+
+#directory.grid-view .business-card img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* List View Styles */
+#directory.list-view {
+  display: block;
+}
+
+#directory.list-view .business-card {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#directory.list-view .business-card img {
+  display: none;
+}
+
+
 /* Footer */
 footer {
   background-color: var(--primary-color);
