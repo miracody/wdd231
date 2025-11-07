@@ -15,7 +15,7 @@
     "phone": "+244 923 456 789",
     "website": "https://angotech.ao",
     "membershipLevel": "Silver",
-    "image": "images/ango-logo.png"
+    "image": "images/ango-logo.jpg"
   },
   {
     "name": "EcoLuanda Market",
@@ -33,7 +33,7 @@
     "phone": "+244 921 222 333",
     "website": "https://talatonaprint.ao",
     "membershipLevel": "Gold",
-    "image": "images/talatona-logo.png"
+    "image": "images/talatona-logo.jpg"
   },
   {
     "name": "Luanda Creatives Studio",
@@ -42,7 +42,7 @@
     "phone": "+244 925 111 222",
     "website": "https://luandacreatives.ao",
     "membershipLevel": "Silver",
-    "image": "images/luanda-logo.png"
+    "image": "images/luanda-logo.jpg"
   },
   {
     "name": "GreenBuild Angola",
@@ -51,7 +51,7 @@
     "phone": "+244 926 444 555",
     "website": "https://greenbuild.ao",
     "membershipLevel": "Bronze",
-    "image": "images/green-logo.png"
+    "image": "images/green-logo.jpg"
   },
   {
     "name": "Kamba Café",
@@ -60,6 +60,6 @@
     "phone": "+244 927 777 888",
     "website": "https://kambacafe.ao",
     "membershipLevel": "Silver",
-    "image": "images/romira-logo.png"
+    "image": "images/kamba-logo.jpg"
   }
 ]

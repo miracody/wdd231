@@ -195,21 +195,23 @@ h1 {
 }
 
 /* Business Cards */
-.business-card {
+.card {
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 2px solid #ccc;
   margin-bottom: 1rem;
 }
 
-.business-card img {
+.card img {
   width: 50px;
   height: auto;
   margin: 0 auto 1rem;
   display: block;
+  border-radius: 50%;
+  border: 2px solid #ccc
 }
 
-.business-card h3 {
+.card h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
@@ -218,11 +220,11 @@ h1 {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.business-card p {
+.card p {
   margin: 0.3rem 0;
 }
 
-.business-card a {
+.card a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
