@@ -203,10 +203,10 @@ h1 {
 }
 
 .business-card img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  margin: 1rem auto 0.5rem;
+  width: 50px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
 }
 
 .business-card h3 {
