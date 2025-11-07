@@ -59,12 +59,15 @@ function displayMembers(members) {
     const badge = getMembershipBadge(level);
 
     card.innerHTML = `
-      <h3>${member.name}</h3>
-      <p>${member.address}</p>
-      <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
-      <p class="membership ${level}">${badge} ${capitalize(level)} Member</p>
-    `;
+  <img src="${member.image}" alt="logo">
+  <h3>${member.name}</h3>
+  <p>${member.category}</p>
+  <p>Email: ${member.email}</p>
+  <p>Phone: ${member.phone}</p>
+  <p><a href="${member.website}" target="_blank">Visit Website</a></p>
+  <p class="membership ${level}">${badge} ${capitalize(level)} Member</p>
+`;
+
 
     directory.appendChild(card);
   });
