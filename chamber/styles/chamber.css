@@ -150,13 +150,20 @@ h1 {
   margin-top: 2rem;
 }
 
-.landscape-img {
+.hero-image {
   width: 100%;
-  max-width: 600px;   /* Adjust this value as needed */
+  max-width: 700px;     /* Adjust this value as needed */
   height: auto;
   display: block;
   margin: 1rem auto;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 8px;   /* Optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    max-width: 90%;
+  }
 }
 
 
