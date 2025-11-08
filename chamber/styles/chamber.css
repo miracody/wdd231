@@ -201,21 +201,6 @@ header.site-header {
   flex-grow: 1;
 }
 
-.weather-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Forecast */
-.forecast-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.forecast-box li {
-  margin: 0.3rem 0;
-}
-
 /* Business Cards */
 .card {
   text-align: center;
