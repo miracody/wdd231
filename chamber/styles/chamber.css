@@ -8,18 +8,19 @@
 }
 
 :root {
-  --primary-color: #2a7b48;
-  --accent-light: #f4f4f4;
-  --card-bg: #ffffff;
-  --text-color: #333333;
+  --primary-color: #14532d; 
+  --accent-light: #ffffff;  
+  --card-bg: #ffffff;      
+  --text-color: #000000;   
   --header-bg: var(--primary-color);
-  --header-text: #ffffff;
+  --header-text: #ffffff;  
   --border-color: #cccccc;
-  --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  --shadow-deep: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-deep: 0 4px 12px rgba(0, 64, 0, 0.3); 
   --font-base: 'Raleway', sans-serif;
   --font-size-base: 16px;
 }
+
 
 /* Overrides normalize.css defaults for body and h1 */
 body {
