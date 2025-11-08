@@ -17,8 +17,6 @@
   --header-text: #ffffff;
   --font-base: 'Raleway', sans-serif;
   --font-size-base: 16px;
-  font-family: var(--font-base);
-  font-size: var(--font-size-base);
 }
 
 /* Overrides normalize.css defaults for body and h1 */
@@ -27,7 +25,10 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   padding: 2rem;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
 }
+
 
 /* Accessibility */
 .visually-hidden {
