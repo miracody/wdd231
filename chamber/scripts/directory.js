@@ -91,4 +91,6 @@ function capitalize(text) {
 }
 
 // Initialize
-getMembers();
+if (directory) {
+  getMembers();
+}
