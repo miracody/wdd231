@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Luanda Chamber of Commerce – connecting and empowering local businesses." />
+  <meta name="author" content="Mirabel Nwanneka" />
+  <title>Luanda Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/normalized.css" />
+  <link rel="stylesheet" href="styles/chamber.css" />
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Luanda Chamber of Commerce logo" width="60" />
+      <span>Luanda Chamber of Commerce</span>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="contact-number">📞 +244 958847285</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 class="hero-title">Empowering Luanda’s Business Community</h2>
+    <img src="images/luanda-cityscape.webp" class="hero-image" alt="Luanda cityscape skyline" />
+    <a href="join.html" class="keynote-button">✨ Join the Chamber</a>
+  </section>
+
+  <main>
+    <!-- Events Section -->
+    <section class="highlights-section">
+      <h2>Current Events</h2>
+      <div class="top-section">
+        <div class="panel event-box">
+          <div class="panel-header">Upcoming Event</div>
+          <div class="panel-body">
+            <p><strong>Luanda Business Connect</strong></p>
+            <p>Date: 15 Nov 2025<br />Time: 10am – 4pm<br />Venue: Chamber Hall, Talatona</p>
+          </div>
+        </div>
+
+        <!-- Weather Panel -->
+        <div class="panel weather-box">
+          <div class="panel-header">Current Weather</div>
+          <div class="panel-body" id="current-weather">
+            <p>Loading weather...</p>
+          </div>
+        </div>
+
+        <!-- Forecast Panel -->
+        <div class="panel forecast-box">
+          <div class="panel-header">3-Day Forecast</div>
+          <div class="panel-body" id="forecast">
+            <p>Loading forecast...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotlight Section -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-container" id="spotlight-container">
+        <!-- JS will inject spotlight cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: info@luandachamber.co | +244 924 888 111</p>
+    <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce | WDD 231 Web Development Project</p>
+    <p id="lastModified"></p>
+    <p>Designed by Mirabel Nwanneka</p>
+  </footer>
+</body>
+</html>

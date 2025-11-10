@@ -271,6 +271,44 @@ header.site-header {
   display: none;
 }
 
+.spotlight-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge.gold {
+  background-color: #d4af37;
+}
+
+.badge.silver {
+  background-color: #c0c0c0;
+}
+
+
 /* Footer */
 footer {
   background-color: var(--primary-color);
