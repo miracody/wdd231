@@ -192,7 +192,7 @@ header.site-header {
 .keynote-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #c17900;
+  background-color: #14532d; 
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -201,7 +201,7 @@ header.site-header {
 }
 
 .keynote-button:hover {
-  background-color: #c17900;
+  background-color: #14532d; 
 }
 
 
@@ -333,7 +333,7 @@ header.site-header {
 }
 
 .badge.gold {
-  background-color: #c17900;
+  background-color: #14532d; 
 }
 
 .badge.silver {
