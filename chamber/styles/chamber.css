@@ -178,7 +178,7 @@ header.site-header {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds contrast */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 1rem;
   border-radius: 8px;
 }
@@ -186,6 +186,7 @@ header.site-header {
 .hero-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: white
 }
 
 .keynote-button {
