@@ -157,21 +157,52 @@ header.site-header {
 }
 
 /* Hero Image */
-.hero-image {
+.hero {
+  position: relative;
   width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 8px;
-  box-shadow: var(--shadow-deep);
+  max-height: 500px;
+  overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .hero-image {
-    max-width: 90%;
-  }
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds contrast */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.keynote-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f9a825;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.keynote-button:hover {
+  background-color: #c17900;
+}
+
 
 /* Panels */
 .panel {
