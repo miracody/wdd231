@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luanda Chamber of Commerce - Join</title>
+  <meta name="author" content="Mirabel">
+  <meta name="description" content="Luanda Chamber of Commerce membership application form. Apply to join and explore membership benefits.">
+  <title>Join | Luanda Chamber of Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="scripts/nav.js" defer></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("timestamp").value = new Date().toISOString();
+    });
+  </script>
+  <script src="scripts/lastmodified.js" defer></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Luanda Chamber of Commerce logo" width="60">
+      <span>Luanda Chamber of Commerce</span>
+    </div>
+      <button id="menu-toggle">&#9776;</button>
+    <nav id="nav-menu">
+      <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="contact-number">📞 +244 958847285</div>
+  </header>
+
+  <main class="top-section">
+    <h1>Join the Luanda Chamber of Commerce</h1>
+    <p>Become a member of the Luanda Chamber of Commerce and unlock exclusive benefits for your business or organization. Fill out the form below to apply for membership.</p>
+    <section class="panel">
+      <div class="panel-header">Membership Application Form</div>
+      <div class="panel-body">
+        <form method="get" action="thankyou.html">
+          <label>First Name*
+            <input type="text" name="firstName" autocomplete="given-name" required title="First Name">
+          </label>
+          <label>Last Name*
+            <input type="text" name="lastName" autocomplete="family-name" required title="Last Name">
+          </label>
+          <label>Title or Position*
+            <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}" required title="Title or Position">
+          </label>
+          <label>Email*
+            <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required title="Email">
+          </label>
+          <label>Phone*
+            <input type="tel" name="phone" autocomplete="tel" required title="Phone Number">
+          </label>
+          <label>Business/Organization's Name*
+            <input type="text" name="organization" autocomplete="organization" required title="Organization Name">
+          </label>
+
+          <fieldset>
+            <legend>Membership*</legend>
+            <label><input type="radio" name="membership" value="np" required> NP Membership</label>
+            <label><input type="radio" name="membership" value="bronze" required> Bronze Membership</label>
+            <label><input type="radio" name="membership" value="silver" required> Silver Membership</label>
+            <label><input type="radio" name="membership" value="gold" required> Gold Membership</label>
+          </fieldset>
+
+          <label>Business/Organization's Description
+            <textarea name="description" placeholder="Type something about the business here..." title="Organization Description"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+          <button type="submit" style="background-color: #14532d; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; font-weight: bold;">Join The Chamber</button>
+        </form>
+      </div>
+    </section>
+
+    <aside class="bottom-section">
+      <div class="panel">
+        <div class="panel-header">Non-Profit Membership Level</div>
+        <div class="panel-body">
+          <button onclick="alert('NP Membership includes community events and recognition.')">Learn More</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Bronze Membership Level</div>
+        <div class="panel-body">
+          <button onclick="alert('Bronze Membership includes directory listing and networking events.')">Learn More</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Silver Membership Level</div>
+        <div class="panel-body">
+          <button onclick="alert('Silver Membership includes advertising and event discounts.')">Learn More</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Gold Membership Level</div>
+        <div class="panel-body">
+          <button onclick="alert('Gold Membership includes premium spotlight and sponsorships.')">Learn More</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+ <footer>
+    <p>Contact: info@luandachamber.co | +244 924 888 111</p>
+    <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce | WDD 231 Web Development Project</p>
+    <p id="lastModified"></p>
+    <p>Designed by Mirabel Nwanneka</p>
+</footer>
+ 
+</body>
+</html>
+

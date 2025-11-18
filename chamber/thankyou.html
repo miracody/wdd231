@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for joining the Luanda Chamber of Commerce. View your submitted membership details.">
+  <meta name="author" content="Mirabel, Luanda Chamber of Commerce">
+  <title>Thank You - Luanda Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalized.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="scripts/nav.js" defer></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+
+      const output = document.getElementById("submittedData");
+      output.innerHTML = `
+        <p><strong>First Name:</strong> ${params.get("firstName") || ""}</p>
+        <p><strong>Last Name:</strong> ${params.get("lastName") || ""}</p>
+        <p><strong>Email:</strong> ${params.get("email") || ""}</p>
+        <p><strong>Phone:</strong> ${params.get("phone") || ""}</p>
+        <p><strong>Organization:</strong> ${params.get("organization") || ""}</p>
+        <p><strong>Membership Level:</strong> ${params.get("membership") || ""}</p>
+        <p><strong>Submitted On:</strong> ${params.get("timestamp") || ""}</p>
+      `;
+    });
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="logo">
+  <img src="images/logo.png" alt="Luanda Chamber of Commerce logo" width="60">
+  <span>Luanda Chamber of Commerce</span>
+</div>
+  <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav id="nav-menu">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </nav>
+  <div class="contact-number">📞 +244 958847285</div>
+</header>
+  <main>
+     <main class="top-section">
+    <section class="panel">
+      <div class="panel-header">Thank You!</div>
+      <div class="panel-body">
+        <p>Your membership application has been submitted successfully 🎉</p>
+        <h2>Submitted Information</h2>
+        <div id="submittedData" class="submitted-info"></div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <p>Contact: info@luandachamber.co | +244 924 888 111</p>
+    <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce | WDD 231 Web Development Project</p>
+    <p id="lastModified"></p>
+    <p>Designed by Mirabel Nwanneka</p>
+  </footer>
+</body>
+</html>
