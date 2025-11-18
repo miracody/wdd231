@@ -219,7 +219,7 @@ header.site-header {
 
 .panel-header {
   background-color: var(--header-bg);
-  color: var(--header-text);
+  color: black;
   padding: 0.75rem 1rem;
   font-weight: bold;
   font-size: 1.1rem;
