@@ -1,10 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu"); // or whatever your menu container ID is
+  const navMenu = document.getElementById("nav-menu");
 
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-  });
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+  }
+
+  
+  const detailsBtn = document.getElementById("details-btn");
+  if (detailsBtn) {
+    detailsBtn.addEventListener("click", () => {
+      
+      alert("Showing details!");
+    });
+  }
 });
 
 
