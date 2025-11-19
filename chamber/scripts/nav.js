@@ -47,3 +47,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.getElementById("np-info").addEventListener("click", () => {
+  alert("NP Membership includes community events and recognition.");
+});
+
+document.getElementById("bronze-info").addEventListener("click", () => {
+  alert("Bronze Membership includes directory listing and networking events.");
+});
+
+document.getElementById("silver-info").addEventListener("click", () => {
+  alert("Silver Membership includes advertising and event discounts.");
+});
+
+document.getElementById("gold-info").addEventListener("click", () => {
+  alert("Gold Membership includes premium spotlight and sponsorships.");
+});
+
+
