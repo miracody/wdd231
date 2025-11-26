@@ -7,16 +7,16 @@
 
 /* Base */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #FFFFFF; /* White background */
-  color: #000000; /* Black text */
+  font-family: 'roboto regular', sans-serif;
+  background-color: #FFFFFF; 
+  color: #000000; 
   line-height: 1.7;
   padding: 2rem;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat bold', sans-serif;
   color: #6B2737; /* Deep Wine */
   margin-bottom: 1rem;
 }
@@ -25,7 +25,7 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 3px solid #6B2737; /* Deep Wine underline */
+  border-bottom: 3px solid #6B2737; 
   padding-bottom: 0.5rem;
 }
 
@@ -41,8 +41,8 @@ h3 {
 section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background-color: #FFFFFF; /* White section background */
-  border: 2px solid #6B2737; /* White borders */
+  background-color: #FFFFFF; 
+  border: 2px solid #6B2737; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
