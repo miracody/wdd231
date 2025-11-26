@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #FFFFFF; /* White background */
+  color: #000000; /* Black text */
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #6B2737; /* Deep Wine */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #6B2737; /* Deep Wine underline */
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF; /* White section background */
+  border: 2px solid #6B2737; /* White borders */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Paragraphs and Lists */
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #6B2737;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #6B2737; /* Deep Wine */
+  color: #FFFFFF; /* White text for contrast */
+  font-weight: bold;
+}
+
+td {
+  background-color: #FFFFFF;
+}
+
+/* Links */
+a {
+  color: #A44A5E; /* Light Wine */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #6B2737; /* Deep Wine */
+  border-top: 2px solid #6B2737;
+  padding-top: 1rem;
+}
