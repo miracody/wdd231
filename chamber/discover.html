@@ -10,15 +10,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalized.css">
+  <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/chamber.css">
   <link rel="stylesheet" href="styles/large.css">
-  
-  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+
+
+
+
+
+
+
+  <meta property="og:title" content="Discover Luanda with the Chamber of Commerce">
+  <meta property="og:description" content="Explore attractions, culture, and community highlights in Luanda. Join us in promoting local business and tourism.">
+  <meta property="og:image" content="https://miracody.github.io/wdd231/chamber/discover/social-preview.png">
+  <meta property="og:url" content="https://miracody.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
 </head>
 <body>
-  <!-- ===== HEADER (copied from index.html) ===== -->
+  <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="logo">
       <img src="images/logo.png" alt="Luanda Chamber of Commerce logo" width="60">
@@ -51,54 +64,16 @@
   <!-- ===== MAIN CONTENT ===== -->
   <main>
     <h2>Local Attractions</h2>
-    <p id="visit-message"></p>
+    <div id="visit-message"></div>
 
-    <section class="discover-grid">
+    <div class="discover-grid">
       <!-- Cards injected dynamically from items.mjs -->
-    </section>
+    </div>
   </main>
 
+  <script src="scripts/discover.js" type="module"></script>
 
-  <!-- ===== SCRIPTS ===== -->
-  <script type="module">
-    import { items } from "./data/items.mjs";
-
-    const container = document.querySelector(".discover-grid");
-
-    items.forEach((item, index) => {
-      const card = document.createElement("article");
-      card.classList.add("card", `card${index+1}`);
-      card.innerHTML = `
-        <h2>${item.name}</h2>
-        <figure><img src="${item.image}" alt="${item.name}"></figure>
-        <address>${item.address}</address>
-        <p>${item.description}</p>
-        <button>Learn more</button>
-      `;
-      container.appendChild(card);
-    });
-
-    // LocalStorage visit tracker
-    const messageArea = document.querySelector("#visit-message");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const now = Date.now();
-
-    if (!lastVisit) {
-      messageArea.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-      const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-      if (days < 1) {
-        messageArea.textContent = "Back so soon! Awesome!";
-      } else if (days === 1) {
-        messageArea.textContent = `You last visited ${days} day ago.`;
-      } else {
-        messageArea.textContent = `You last visited ${days} days ago.`;
-      }
-    }
-    localStorage.setItem("lastVisit", now);
-  </script>
-
-   <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>Contact: info@luandachamber.co | +244 924 888 111</p>
     <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce | WDD 231 Web Development Project</p>

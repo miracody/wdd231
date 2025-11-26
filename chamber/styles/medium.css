@@ -1,11 +1,61 @@
 /* Medium screens (641px–1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
   .discover-grid {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "card1 card2"
       "card3 card4"
       "card5 card6"
       "card7 card8";
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .discover-grid .card {
+    display: grid;
+    grid-template-columns: 320px 1fr; 
+    grid-template-areas:
+      "photograph name"
+      "photograph description"
+      "photograph location";
+    gap: 1rem;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-width: 620px;
+  }
+
+  .photograph { grid-area: photograph; }
+  .name { grid-area: name; }
+  .description { grid-area: description; }
+  .location { grid-area: location; }
+
+  .discover-grid .card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+  }
+
+  .discover-grid .card p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+  }
+
+  .discover-grid .card address {
+    font-style: normal;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .discover-grid .card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
   }
 }

@@ -1,50 +1,50 @@
 export const items = [
   {
-    "name": "Fortaleza de São Miguel",
-    "address": "Rua da Fortaleza, Luanda",
-    "description": "Built in 1576, this fortress offers panoramic views of Luanda and houses historic military artifacts.",
-    "image": "images/fortaleza.webp"
+    name: "Fortaleza de São Miguel",
+    address: "Rua da Fortaleza, Luanda",
+    description: "Historic fortress offering panoramic views and colonial-era artifacts.",
+    image: "images/fortaleza.webp"
   },
   {
-    "name": "Ilha do Cabo",
-    "address": "Ilha de Luanda",
-    "description": "A lively beach strip known for seafood restaurants, nightlife, and stunning Atlantic Ocean views.",
-    "image": "images/ilha.webp"
+    name: "Ilha de Luanda",
+    address: "Ilha Road, Luanda",
+    description: "Beachfront escape with restaurants, nightlife, and water sports.",
+    image: "images/ilha.webp"
   },
   {
-    "name": "Museu da Moeda",
-    "address": "Rua Major Kanhangulo, Luanda",
-    "description": "A modern museum showcasing Angola’s currency history and interactive exhibits on financial culture.",
-    "image": "images/moeda.webp"
+    name: "Museu da Moeda",
+    address: "Av. 4 de Fevereiro, Luanda",
+    description: "Modern museum showcasing Angola’s currency history and interactive exhibits.",
+    image: "images/neto.webp"
   },
   {
-    "name": "Parque Nacional da Kissama",
-    "address": "Bengo Province, south of Luanda",
-    "description": "A vast national park home to elephants, antelopes, and diverse bird species, perfect for safaris.",
-    "image": "images/kissama.webp"
+    name: "Mausoléu Agostinho Neto",
+    address: "Praça Agostinho Neto, Luanda",
+    description: "Monument and mausoleum honoring Angola’s first president.",
+    image: "images/mausoleu.webp"
   },
   {
-    "name": "Mausoléu Agostinho Neto",
-    "address": "Praça Agostinho Neto, Luanda",
-    "description": "A striking monument honoring Angola’s first president, featuring unique architecture and cultural symbolism.",
-    "image": "images/mausoleu.webp"
+    name: "baia de Luanda",
+    address: "Rua Major Kanhangulo, Luanda",
+    description: "Unique iron palace designed by Gustave Eiffel, now a cultural center.",
+    image: "images/baia.webp"
   },
   {
-    "name": "Mercado do Artesanato",
-    "address": "Talatona, Luanda",
-    "description": "A vibrant craft market where artisans sell handmade jewelry, carvings, textiles, and souvenirs.",
-    "image": "images/artesanato.webp"
+    name: "Miradouro da Lua",
+    address: "Belas District, Luanda",
+    description: "Stunning lunar-like cliffs offering breathtaking views of the coastline.",
+    image: "images/miradouro.webp"
   },
   {
-    "name": "Miradouro da Lua",
-    "address": "Estrada de Belas, near Luanda",
-    "description": "A breathtaking viewpoint with lunar-like cliffs formed by erosion, offering dramatic landscapes.",
-    "image": "images/miradouro.webp"
+    name: "Parque Nacional da Kissama",
+    address: "Bengo Province, near Luanda",
+    description: "Wildlife reserve with elephants, antelopes, and safari tours.",
+    image: "images/kissama.webp"
   },
   {
-    "name": "Baía de Luanda",
-    "address": "Marginal de Luanda",
-    "description": "A scenic bay with modern promenades, restaurants, and cultural landmarks along the waterfront.",
-    "image": "images/baia.webp"
+    name: "Mercado do Artesanato",
+    address: "Talatona, Luanda",
+    description: "Vibrant market featuring Angolan crafts, textiles, and souvenirs.",
+    image: "images/mercado.webp"
   }
 ];

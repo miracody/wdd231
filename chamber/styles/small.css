@@ -1,0 +1,64 @@
+/* Small screens (320px–640px) */
+@media (max-width: 640px) {
+  .discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .discover-grid .card {
+    display: grid;
+    grid-template-areas:
+      "name"
+      "photograph"
+      "description"
+      "location";
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0.5rem;
+  }
+
+  .discover-grid .card h2 {
+    grid-area: name;
+    margin: 0.5rem 0;
+  }
+
+  .discover-grid .card img {
+    grid-area: photograph;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .discover-grid .card p {
+    grid-area: description;
+    margin: 0.5rem 0;
+  }
+
+  .discover-grid .card address {
+    grid-area: location;
+    margin: 0.5rem 0;
+    font-style: normal;
+    color: #555;
+  }
+
+  .discover-grid .card img {
+  width: 300px;       /* fixed width */
+  height: 200px;      /* fixed height */
+  object-fit: cover;  /* crops excess without distortion */
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;     /* centers the image inside the card */
+}
+
+
+  /* Disable hover effects on mobile */
+  .discover-grid .card img:hover {
+    transform: none;
+    filter: none;
+  }
+
+}
