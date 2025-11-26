@@ -44,3 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const currentYearEl = document.getElementById("currentyear");
+  if (currentYearEl) {
+    currentYearEl.textContent = new Date().getFullYear();
+  }
+  const lastModifiedEl = document.getElementById("lastModified");
+  if (lastModifiedEl) {
+    lastModifiedEl.textContent = document.lastModified;
+  }
+});
+
