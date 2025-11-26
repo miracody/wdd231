@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Luanda with the Chamber of Commerce – attractions, culture, and community highlights.">
+  <meta name="author" content="Mirabel Nwanneka">
+  <title>Luanda Chamber | Discover</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalized.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/large.css">
+  
+  
+</head>
+<body>
+  <!-- ===== HEADER (copied from index.html) ===== -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Luanda Chamber of Commerce logo" width="60">
+      <span>Luanda Chamber of Commerce</span>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+    <div class="contact-number">📞 +244 958847285</div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <img src="images/luanda.jpg" class="hero-image" alt="Luanda cityscape skyline">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Discover Luanda</h1>
+      <p>Explore attractions, culture, and community highlights with the Chamber of Commerce.</p>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <h2>Local Attractions</h2>
+    <p id="visit-message"></p>
+
+    <section class="discover-grid">
+      <!-- Cards injected dynamically from items.mjs -->
+    </section>
+  </main>
+
+
+  <!-- ===== SCRIPTS ===== -->
+  <script type="module">
+    import { items } from "./data/items.mjs";
+
+    const container = document.querySelector(".discover-grid");
+
+    items.forEach((item, index) => {
+      const card = document.createElement("article");
+      card.classList.add("card", `card${index+1}`);
+      card.innerHTML = `
+        <h2>${item.name}</h2>
+        <figure><img src="${item.image}" alt="${item.name}"></figure>
+        <address>${item.address}</address>
+        <p>${item.description}</p>
+        <button>Learn more</button>
+      `;
+      container.appendChild(card);
+    });
+
+    // LocalStorage visit tracker
+    const messageArea = document.querySelector("#visit-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+
+    if (!lastVisit) {
+      messageArea.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+      const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+      if (days < 1) {
+        messageArea.textContent = "Back so soon! Awesome!";
+      } else if (days === 1) {
+        messageArea.textContent = `You last visited ${days} day ago.`;
+      } else {
+        messageArea.textContent = `You last visited ${days} days ago.`;
+      }
+    }
+    localStorage.setItem("lastVisit", now);
+  </script>
+
+   <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Contact: info@luandachamber.co | +244 924 888 111</p>
+    <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce | WDD 231 Web Development Project</p>
+    <p id="lastModified"></p>
+    <p>Designed by Mirabel Nwanneka</p>
+  </footer>
+</body>
+</html>
