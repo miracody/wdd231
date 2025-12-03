@@ -51,6 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.classList.toggle("open");
   });
 });
+
+   // i made this change to explore the features button to scroll to the features section
+  document.addEventListener("DOMContentLoaded", () => {
+  const exploreBtn = document.getElementById("explore-features-btn");
+  if (exploreBtn) {
+    exploreBtn.addEventListener("click", () => {
+      window.location.href = "features.html";
+    });
+  }
+});
+
  
     // i used this to display the current year and lastmodified in the footer
 document.addEventListener("DOMContentLoaded", function () {
