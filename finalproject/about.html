@@ -68,8 +68,17 @@
       <label>Name <input type="text" name="name" required></label>
       <label>Email <input type="email" name="email" required></label>
       <label>Message <textarea name="message"></textarea></label>
+
+      <input type="hidden" name="submitted" id="submitted">
       <button type="submit">Send</button>
     </form>
+
+    <script>
+      document.getElementById("submitted").value = new Date().toISOString();
+    </script>
+
+    
+
   </section>
 </main>
 
