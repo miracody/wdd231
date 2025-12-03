@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROMIRA GLOBAL | Crochet Business Supplies</title>
+  <meta name="description" content="Romira Global empowers Angolan artisans with high-quality crochet supplies and business tools.">
+  <meta name="author" content="Mirabel">
+  <meta property="og:title" content="ROMIRA GLOBAL | Crochet Business Supplies">
+  <meta property="og:description" content="Discover tools and supplies to elevate your crochet business.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-username.github.io/wdd231/final/index.html">
+  <meta property="og:image" content="images/romiralogo.jpg">
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/romira.css">
+
+  <script type="module" src="scripts/romira.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Form Submission</h1>
+    <dl id="output"></dl>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const output = document.getElementById('output');
+    output.innerHTML = Array.from(params.entries())
+      .map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+  --bg: #FDF6EC;
+  --accent: #B87333;
+  --highlight: #6A4E77;
+  --section: #EAD7F1;
+  --link: black;
+  --font-heading: 'Open Sans', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--link);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav.open ul {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #fff;
+}
+
+#nav-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+
+.hero {
+  background: linear-gradient(rgba(106, 78, 119, 0.8), rgba(184, 115, 51, 0.8)),
+    url("images/hero-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.hero button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: var(--highlight);
+  color: #fff;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: black;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--highlight);
+  color: #fff;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal {
+  background: var(--section);
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 90%;
+  color: black;
+}
+
+footer {
+  background: var(--accent);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--highlight);
+  outline-offset: 2px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #nav-toggle {
+    display: none;
+  }
+}

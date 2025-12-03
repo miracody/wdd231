@@ -157,15 +157,28 @@
   },
   
    {
-    "id": "bas",
-    "name": "Baby Blanket",
+    "id": "basket-storage",
+    "name": "Basket Storage",
     "category": "accessories",
     "price": 8500,
     "currency": "AOA",
     "rating": 5.0,
     "stock": 8,
-    "image": "images/baby-blanket.webp",
-    "alt": "Crochet baby blanket",
-    "description": "Soft pastel blanket, ideal for newborns."
+    "image": "images/crochet-basket.webp",
+    "alt": "Crochet basket",
+    "description": "basket, ideal for newborns."
   },
+
+   {
+    "id": "crochet-bag",
+    "name": "Bag Crochet",
+    "category": "accessories",
+    "price": 10500,
+    "currency": "AOA",
+    "rating": 5.0,
+    "stock": 8,
+    "image": "images/classic-bag.webp",
+    "alt": "Classic crochet bag",
+    "description": "Soft bag, all purpose."
+  }
 ]
