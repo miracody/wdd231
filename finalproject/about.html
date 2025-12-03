@@ -61,25 +61,25 @@
       culture, and make crochet a thriving part of Angola’s future.</em>
     </p>
   </section>
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form action="form-action.html" method="get">
+    <label>Name 
+      <input type="text" name="name" required>
+    </label>
+    <label>Email 
+      <input type="email" name="email" required>
+    </label>
+    <label>Message 
+      <textarea name="message"></textarea>
+    </label>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form action="form-action.html" method="get">
-      <label>Name <input type="text" name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Message <textarea name="message"></textarea></label>
+    <input type="hidden" name="submitted" id="submitted">
 
-      <input type="hidden" name="submitted" id="submitted">
-      <button type="submit">Send</button>
-    </form>
+    <button type="submit">Send</button>
+  </form>
+</section>
 
-    <script>
-      document.getElementById("submitted").value = new Date().toISOString();
-    </script>
-
-    
-
-  </section>
 </main>
 
    <footer>
