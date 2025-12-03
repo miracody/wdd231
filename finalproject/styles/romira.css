@@ -1,7 +1,7 @@
 :root {
   --bg: #FDF6EC;
-  --accent: #B87333;
-  --highlight: #6A4E77;
+  --accent: #1F4E79;
+  --highlight: #005A32;
   --section: #EAD7F1;
   --link: black;
   --font-heading: 'Open Sans', sans-serif;
@@ -81,13 +81,13 @@ nav a:focus {
 }
 
 .hero {
-  background: linear-gradient(rgba(106, 78, 119, 0.8), rgba(184, 115, 51, 0.8)),
-    url("images/hero-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(#000000, #000000);
   color: #fff;
   text-align: center;
   padding: 4rem 1rem;
   border-radius: 8px;
 }
+
 
 .hero h2 {
   font-size: 2rem;
@@ -99,21 +99,7 @@ nav a:focus {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #fff;
-}
-
-.hero button {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background: var(--highlight);
-  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 main {
@@ -165,18 +151,23 @@ select {
   color: black;
 }
 
-button {
+/* ✅ AAA Contrast Button Styling */
+button,
+.hero button,
+button:hover,
+.hero button:hover {
   background: var(--accent);
-  color: #fff;
+  color: #fff !important;
   border: none;
-  padding: 0.6rem;
+  padding: 0.6rem 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+.hero button:hover {
   background: var(--highlight);
-  color: #fff;
+  color: #fff !important;
 }
 
 .modal-backdrop {
