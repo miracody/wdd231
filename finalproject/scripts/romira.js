@@ -108,4 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  renderSubmittedData();
+  setFooterMeta();
+
+  // Add submitted date if present
+  const output = document.getElementById('output');
+  if (output && !window.location.search.includes('submitted')) {
+    const now = new Date().toLocaleString();
+    output.innerHTML += `<dt>Submitted on</dt><dd>${escapeHTML(now)}</dd>`;
+  }
+});
 
