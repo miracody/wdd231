@@ -76,4 +76,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Escape HTML to prevent unsafe injection
+function escapeHTML(str) {
+  return String(str).replace(/[&<>"']/g, m => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[m]));
+}
+
+function renderSubmittedData() {
+  const params = new URLSearchParams(window.location.search);
+  const output = document.getElementById('output');
+  output.innerHTML = Array.from(params.entries())
+    .map(([k, v]) => `<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`)
+    .join('');
+}
+
+function setFooterMeta() {
+  const yearEl = document.getElementById('currentyear');
+  const modEl = document.getElementById('lastModified');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  if (modEl) modEl.textContent = `Last modified: ${document.lastModified}`;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderSubmittedData();
+  setFooterMeta();
+});
+
+
 

@@ -1,35 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ROMIRA GLOBAL | Crochet Business Supplies</title>
-  <meta name="description" content="Romira Global empowers Angolan artisans with high-quality crochet supplies and business tools.">
-  <meta name="author" content="Mirabel">
-  <meta property="og:title" content="ROMIRA GLOBAL | Crochet Business Supplies">
-  <meta property="og:description" content="Discover tools and supplies to elevate your crochet business.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMIRA GLOBAL | Form Submission Results</title>
+  <meta name="description" content="View the results of your form submission to Romira Global.">
+  <meta name="author" content="Mirabel Nwanneka">
+  <meta property="og:title" content="ROMIRA GLOBAL | Form Submission Results">
+  <meta property="og:description" content="See the details you submitted to Romira Global.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://miracody.github.io/wdd231/finalproject/images/romiralogo.jpg">
-  <meta property="og:image" content="images/romiralogo.jpg">
-   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/romira.css">
+  <meta property="og:url" content="https://miracody.github.io/wdd231/finalproject/form-action.html">
+  <meta property="og:image" content="https://miracody.github.io/wdd231/finalproject/images/romiralogo.jpg">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/base.css">
-
-  <script type="module" src="scripts/romira.js"></script>
 </head>
 <body>
+  <header>
+    <h1>ROMIRA GLOBAL</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <h1>Form Submission</h1>
+    <h1>Form Submission Results</h1>
+    <h2>Submitted Data</h2>
     <dl id="output"></dl>
   </main>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const output = document.getElementById('output');
-    output.innerHTML = Array.from(params.entries())
-      .map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
-  </script>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> ROMIRA GLOBAL</p>
+    <p id="lastModified"></p>
+    <p>Created by Mirabel Nwanneka</p>
+  </footer>
+
+  <script type="module" src="scripts/form-action.js"></script>
 </body>
 </html>
