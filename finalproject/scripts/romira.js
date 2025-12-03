@@ -90,9 +90,25 @@ function escapeHTML(str) {
 function renderSubmittedData() {
   const params = new URLSearchParams(window.location.search);
   const output = document.getElementById('output');
+
+  // Build the list of submitted fields
   output.innerHTML = Array.from(params.entries())
     .map(([k, v]) => `<dt>${escapeHTML(k)}</dt><dd>${escapeHTML(v)}</dd>`)
     .join('');
+
+  // If no "submitted" field was passed, add a friendly timestamp here
+  if (!params.has('submitted')) {
+    const now = new Date();
+    const formatted = now.toLocaleString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+    output.innerHTML += `<dt>Submitted on</dt><dd>${escapeHTML(formatted)}</dd>`;
+  }
 }
 
 function setFooterMeta() {
@@ -106,17 +122,3 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSubmittedData();
   setFooterMeta();
 });
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  renderSubmittedData();
-  setFooterMeta();
-
-  // Add submitted date if present
-  const output = document.getElementById('output');
-  if (output && !window.location.search.includes('submitted')) {
-    const now = new Date().toLocaleString();
-    output.innerHTML += `<dt>Submitted on</dt><dd>${escapeHTML(now)}</dd>`;
-  }
-});
-
