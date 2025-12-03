@@ -122,3 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSubmittedData();
   setFooterMeta();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const submittedField = document.getElementById("submitted");
+  if (submittedField) {
+    submittedField.value = new Date().toISOString();
+  }
+});
+
