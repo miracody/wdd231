@@ -86,7 +86,7 @@ nav a:focus {
 h1,
 h2 {
   font-family: var(--font-heading);
-  color: black;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
